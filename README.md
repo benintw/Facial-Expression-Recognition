@@ -29,14 +29,14 @@ make download_dataset
 
 ## Features
 
-✅ **Facial Expression Recognition**: Predicts emotions from uploaded images using a CNN model.
-✅ **Data Augmentation**: Utilizes Albumentations for robust model generalization.
-✅ **Model Evaluation**: Includes various metrics to assess model performance.
-✅ **Pre-trained EfficientNet**: Leverages transfer learning for better accuracy.
-✅ **Configuration-based Execution**: Uses YAML files for training, validation, and inference settings.
-✅ **Poetry for Dependency Management**: Ensures reproducibility and organized package management.
-✅ **Docker Support**: Containerized deployment for easy setup.
-✅ **Makefile for Automation**: Streamlines common commands.
+- **Facial Expression Recognition**: Predicts emotions from uploaded images using a CNN model.
+- **Data Augmentation**: Utilizes Albumentations for robust model generalization.
+- **Model Evaluation**: Includes various metrics to assess model performance.
+- **Pre-trained EfficientNet**: Leverages transfer learning for better accuracy.
+- **Configuration-based Execution**: Uses YAML files for training, validation, and inference settings.
+- **Poetry for Dependency Management**: Ensures reproducibility and organized package management.
+- **Docker Support**: Containerized deployment for easy setup.
+- **Makefile for Automation**: Streamlines common commands.
 
 ---
 
