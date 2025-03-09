@@ -1,0 +1,13 @@
+services:
+  app: # - Specifies the name of the service
+    build: # Specifies how to build the container
+      context: . # - Uses the current directory as the build context
+      dockerfile: Dockerfile # - Specifies the Dockerfile to use
+    volumes: # - Mounts the data directory to the container
+      - ./data:/app/data # - Mounts the data directory to the container
+      - ./checkpoints:/app/checkpoints # - Mounts the checkpoints directory to the container
+      - ./logs:/app/logs # - Mounts the logs directory to the container
+      - ./predictions:/app/predictions # - Mounts the predictions directory to the container
+    command: poetry run make all # - Runs the make all command
+    environment: # Sets environment variables for the container
+      - DEVICE=cpu # Sets DEVICE environment variable to "cpu"

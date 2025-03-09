@@ -1,0 +1,22 @@
+# Validation configuration for Facial Expression Recognition Model
+#
+# This configuration file contains parameters for model validation:
+# - Data loading and preprocessing settings
+# - Model architecture configuration
+# - Validation metrics and frequency
+# - Logging configuration
+#
+# Usage: Pass this file to the validation script using --config_path
+
+prediction:
+  output_dir: "./predictions"
+
+validation:
+  frequency: 1
+  metrics: ["mAP", "IoU"]
+
+logging:
+  log_dir: "./logs"
+  save_freq: 5
+
+model: "FacialExpressionModel"

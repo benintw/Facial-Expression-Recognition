@@ -1,0 +1,16 @@
+# Ignore large directories
+data/
+checkpoints/
+logs/
+predictions/
+
+# Ignore temporary files
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+*.log
+
+# Ignore development files (optional)
+notebooks/
+tests/

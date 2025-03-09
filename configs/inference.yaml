@@ -1,0 +1,13 @@
+# Test configuration for Facial Expression Recognition Model
+#
+# This configuration file contains parameters for testing/inference:
+# - Data loading and preprocessing settings
+# - Model architecture configuration
+# - Prediction output settings
+# - Validation metrics
+# - Logging configuration
+#
+# Usage: Pass this file to the testing/inference script using --config_path
+
+prediction:
+  output_dir: "./predictions"

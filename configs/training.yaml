@@ -1,0 +1,29 @@
+# Training configuration for Facial Expression Recognition Model
+#
+# This configuration file contains parameters for training a facial expression recognition model:
+# - Data loading and preprocessing settings
+# - Model architecture configuration
+# - Training hyperparameters
+# - Validation settings
+# - Logging configuration
+#
+# Usage: Pass this file to the training script using --config_path
+
+epochs: 2
+learning_rate: 1.0e-3
+early_stopping_patience: 5
+lr_patience: 5
+grad_clip: 1.0
+num_workers: 4
+weight_decay: 0.1
+
+logging:
+  log_dir: "./logs"
+  save_freq: 5
+
+model: "FacialExpressionModel"
+optimizer:
+  type: "Adam"
+  params:
+    lr: 0.001
+    weight_decay: 1.0e-5
